@@ -4,6 +4,7 @@
     text-align: left;
 }
 
-.content {
-    margin: 0px auto
+.containerForAllCards {
+    margin: 0px auto;
+    width: 1235px;
 }

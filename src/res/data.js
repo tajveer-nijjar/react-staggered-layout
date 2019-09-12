@@ -7,7 +7,8 @@ export default function() {
       image: "",
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      checked: true
+      checked: true,
+      color: "#73c14a"
     },
     {
       id: 2,
@@ -16,7 +17,8 @@ export default function() {
       image: "",
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-      checked: true
+      checked: true,
+      color: "#1e70a4"
     },
     {
       id: 3,
@@ -25,7 +27,8 @@ export default function() {
       image: "",
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      checked: false
+      checked: false,
+      color: "#e5b728"
     },
     {
       id: 4,
@@ -34,7 +37,8 @@ export default function() {
       image: "",
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      checked: false
+      checked: false,
+      color: "#e5b728"
     },
     {
       id: 5,
@@ -43,7 +47,8 @@ export default function() {
       image: "",
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-      checked: true
+      checked: true,
+      color: "#f37f2c"
     },
     {
       id: 6,
@@ -52,7 +57,8 @@ export default function() {
       image: "",
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      checked: false
+      checked: false,
+      color: "#1e70a4"
     },
     {
       id: 7,
@@ -61,7 +67,8 @@ export default function() {
       image: "",
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      checked: false
+      checked: false,
+      color: "#73c14a"
     },
     {
       id: 8,
@@ -70,7 +77,8 @@ export default function() {
       image: "",
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      checked: false
+      checked: false,
+      color: "#73c14a"
     },
     {
       id: 9,
@@ -79,7 +87,8 @@ export default function() {
       image: "",
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      checked: true
+      checked: true,
+      color: "#1e70a4"
     }
   ];
 

@@ -48,21 +48,25 @@ class TheOtherGrid extends React.Component {
       <React.Fragment>
         <div>The other grid</div>
 
-        <GridLayout
-          className="layout"
-          layout={layout}
-          cols={12}
-          rowHeight={30}
-          width={1200}
-        >
-          {layout.map(card => {
-            return (
-              <div className="card" key={card.i}>
-                <Card data={data[card.index]} />
-              </div>
-            );
-          })}
-        </GridLayout>
+        <div className="containerForAllCards">
+          <GridLayout
+            className="layout"
+            layout={layout}
+            cols={12}
+            rowHeight={30}
+            width={1200}
+            // containerPadding={[50, 50]}
+            margin={[11, 11]}
+          >
+            {layout.map(card => {
+              return (
+                <div className="card" key={card.i}>
+                  <Card data={data[card.index]} />
+                </div>
+              );
+            })}
+          </GridLayout>
+        </div>
       </React.Fragment>
     );
   }

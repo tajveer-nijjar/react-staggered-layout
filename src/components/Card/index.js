@@ -8,10 +8,11 @@ const styles = theme => ({
     height: "100% !important",
     // width: "100px !important",
     // background: "orange"
-    border: "2px solid #73C14A",
+    // border: "2px solid #73C14A",
     background: "white"
   },
   content: {
+    paddingTop: "5px",
     margin: "10px"
   },
   cardImage: {
@@ -29,8 +30,9 @@ const styles = theme => ({
     fontSize: "12px",
     display: "inline-block",
     borderRadius: "10px",
-    padding: "2px 6px",
-    background: "#73C14A"
+    padding: "2px 6px 4px 6px",
+    // background: "#73C14A"
+    color: "white"
   },
   description: {
     textAlign: "justify"
@@ -40,8 +42,14 @@ const styles = theme => ({
 class Card extends Component {
   render() {
     const { classes } = this.props;
-    const { title, levels, image, description, checked } = this.props.data;
-
+    const {
+      title,
+      levels,
+      image,
+      description,
+      checked,
+      color
+    } = this.props.data;
     return (
       <React.Fragment>
         <div className={classes.cardContainer}>
@@ -49,7 +57,10 @@ class Card extends Component {
             <h2 className={`${classes.noMargin} ${classes.heading}`}>
               {title}
             </h2>
-            <h4 className={`${classes.noMargin} ${classes.levels}`}>
+            <h4
+              className={`${classes.noMargin} ${classes.levels}`}
+              style={{ background: color }}
+            >
               {levels} LEVELS
             </h4>
             <img
