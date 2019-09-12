@@ -36,7 +36,7 @@ class TheOtherGrid extends React.Component {
         x: xValue,
         y: 0,
         w: 4,
-        h: minHeight + descriptionHeight,
+        h: minHeight + descriptionHeight + 1, //+1 for extra height.
         static: true,
         index: i
       };
@@ -50,17 +50,16 @@ class TheOtherGrid extends React.Component {
 
         <div className="containerForAllCards">
           <GridLayout
-            className="layout"
             layout={layout}
             cols={12}
             rowHeight={30}
             width={1200}
             // containerPadding={[50, 50]}
-            margin={[11, 11]}
+            // margin={[0, 12]}
           >
             {layout.map(card => {
               return (
-                <div className="card" key={card.i}>
+                <div key={card.i}>
                   <Card data={data[card.index]} />
                 </div>
               );

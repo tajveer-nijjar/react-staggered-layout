@@ -6,14 +6,15 @@ import minionImage from "../../res/image.png";
 const styles = theme => ({
   cardContainer: {
     height: "100% !important",
+    textAlign: "left"
     // width: "100px !important",
     // background: "orange"
     // border: "2px solid #73C14A",
-    background: "white"
   },
   content: {
-    paddingTop: "5px",
-    margin: "10px"
+    padding: "10px",
+    margin: "10px",
+    background: "white"
   },
   cardImage: {
     display: "block",
@@ -60,8 +61,8 @@ class Card extends Component {
 
     return (
       <React.Fragment>
-        <div className={classes.cardContainer} style={{ border: border }}>
-          <div className={classes.content}>
+        <div className={classes.cardContainer}>
+          <div className={classes.content} style={{ border: border }}>
             <h2 className={`${classes.noMargin} ${classes.heading}`}>
               {title}
             </h2>
