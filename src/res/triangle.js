@@ -1,6 +1,7 @@
 import React from "react";
 import { withStyles } from "@material-ui/core";
-import { classes } from "istanbul-lib-coverage";
+
+import tickImage from "../res/tick.png";
 
 const styles = theme => ({
   arrow: {
@@ -28,6 +29,14 @@ const styles = theme => ({
   },
   arrowWhite: {
     borderBottom: "25px solid white !important"
+  },
+  tick: {
+    position: "absolute",
+    top: "10px",
+    right: "12px",
+    zIndex: 1,
+    height: "20px",
+    width: "20px"
   }
 });
 
@@ -51,6 +60,7 @@ const Triangle = ({ classes, color }) => {
   }
   return (
     <React.Fragment>
+      <img src={tickImage} alt="tick" className={classes.tick} />
       <div className={`${classes.arrow} ${colorClass}`}></div>
     </React.Fragment>
   );

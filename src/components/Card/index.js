@@ -38,8 +38,7 @@ const styles = theme => ({
   },
   description: {
     textAlign: "justify"
-  },
-  triangle: {}
+  }
 });
 
 class Card extends Component {
@@ -64,11 +63,7 @@ class Card extends Component {
     return (
       <React.Fragment>
         <div className={classes.cardContainer}>
-          {checked ? (
-            <Triangle color={color} className={classes.triangle} />
-          ) : (
-            ""
-          )}
+          {checked ? <Triangle color={color} /> : ""}
           <div className={classes.content} style={{ border: border }}>
             <h2 className={`${classes.noMargin} ${classes.heading}`}>
               {title}
