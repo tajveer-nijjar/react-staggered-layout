@@ -91,27 +91,27 @@ export default function() {
       color: "#1e70a4"
     },
     {
-      id: 9,
-      title: "Skipping",
-      levels: 2,
+      id: 10,
+      title: "Jack In The Box",
+      levels: 6,
+      image: "",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      checked: false,
+      color: "#73c14a"
+    },
+    {
+      id: 11,
+      title: "Passing the Beanbag",
+      levels: 3,
       image: "",
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      checked: true,
-      color: "#1e70a4"
+      checked: false,
+      color: "#73c14a"
     },
     {
-      id: 9,
-      title: "Skipping",
-      levels: 2,
-      image: "",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      checked: true,
-      color: "#1e70a4"
-    },
-    {
-      id: 9,
+      id: 12,
       title: "Skipping",
       levels: 2,
       image: "",

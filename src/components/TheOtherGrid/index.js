@@ -6,8 +6,14 @@ import Card from "../Card";
 import getData from "../../res/data";
 
 class TheOtherGrid extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { data: getData() };
+  }
+
   render() {
-    const data = getData();
+    // const data = getData();
     const minHeight = 7;
 
     let layout = [
@@ -16,9 +22,9 @@ class TheOtherGrid extends React.Component {
       // { i: "key3", x: 8, y: 0, w: 4, h: minHeight, static: true }
     ];
 
-    for (let i = 0; i < data.length; i++) {
+    for (let i = 0; i < this.state.data.length; i++) {
       const index = `key${i + 1}`;
-      const descriptionLength = data[i].description.length;
+      const descriptionLength = this.state.data[i].description.length;
       const numberOfLineOfDescription = Math.ceil(descriptionLength / 45);
       const descriptionHeight = Math.ceil(numberOfLineOfDescription / 2);
 
@@ -44,6 +50,48 @@ class TheOtherGrid extends React.Component {
       layout = [...layout, key];
     }
 
+    const handleCardClick = i => {
+      let newData = this.state.data.map((item, index) => {
+        debugger;
+        if (index === i) {
+          debugger;
+          item.checked = !item.checked;
+        }
+
+        return item;
+      });
+
+      this.setState(state => {
+        return {
+          ...state,
+          data: newData
+        };
+      });
+
+      // this.setState(state => {
+      //   return {
+      //     ...state,
+      //     data:{
+      //       ...data,
+      //       data.map((item, index) => {
+      //         if (index === i) {
+      //           debugger;
+      //           return {
+      //             ...item,
+      //             checked: !item.checked
+      //           };
+      //         }
+
+      //         return item;
+      //       });
+      //     }
+
+      //   }
+
+      // });
+      debugger;
+    };
+
     return (
       <React.Fragment>
         <div>The other grid</div>
@@ -59,8 +107,8 @@ class TheOtherGrid extends React.Component {
           >
             {layout.map(card => {
               return (
-                <div key={card.i}>
-                  <Card data={data[card.index]} />
+                <div key={card.i} onClick={() => handleCardClick(card.index)}>
+                  <Card data={this.state.data[card.index]} />
                 </div>
               );
             })}
