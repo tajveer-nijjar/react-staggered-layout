@@ -50,9 +50,17 @@ class Card extends Component {
       checked,
       color
     } = this.props.data;
+
+    let border;
+    if (checked) {
+      border = `2px solid ${color}`;
+    } else {
+      border = "";
+    }
+
     return (
       <React.Fragment>
-        <div className={classes.cardContainer}>
+        <div className={classes.cardContainer} style={{ border: border }}>
           <div className={classes.content}>
             <h2 className={`${classes.noMargin} ${classes.heading}`}>
               {title}
