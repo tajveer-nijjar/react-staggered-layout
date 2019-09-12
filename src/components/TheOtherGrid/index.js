@@ -19,8 +19,8 @@ class TheOtherGrid extends React.Component {
     for (let i = 0; i < data.length; i++) {
       const index = `key${i + 1}`;
       const descriptionLength = data[i].description.length;
-      const steps = Math.ceil(descriptionLength / 45);
-      const cardHeight = Math.ceil(steps / 2);
+      const numberOfLineOfDescription = Math.ceil(descriptionLength / 45);
+      const descriptionHeight = Math.ceil(numberOfLineOfDescription / 2);
 
       let xValue;
       if (i % 3 === 0) {
@@ -31,14 +31,12 @@ class TheOtherGrid extends React.Component {
         xValue = 8;
       }
 
-      let yValue = 0;
-
       let key = {
         i: index,
         x: xValue,
-        y: yValue,
+        y: 0,
         w: 4,
-        h: minHeight + cardHeight,
+        h: minHeight + descriptionHeight,
         static: true,
         index: i
       };
@@ -64,16 +62,6 @@ class TheOtherGrid extends React.Component {
               </div>
             );
           })}
-
-          {/* <div className="card" key="key1">
-            <Card data={data[0]} />
-          </div>
-          <div className="card" key="key2">
-            <Card data={data[1]} />
-          </div>
-          <div className="card" key="key3">
-            <Card data={data[2]} />
-          </div> */}
         </GridLayout>
       </React.Fragment>
     );
