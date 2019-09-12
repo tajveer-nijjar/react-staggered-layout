@@ -1,0 +1,9 @@
+.card {
+    margin: 20px;
+    /* border: 2px solid red; */
+    text-align: left;
+}
+
+.content {
+    margin: 0px auto
+}
