@@ -54,7 +54,6 @@ class TheOtherGrid extends React.Component {
       let newData = this.state.data.map((item, index) => {
         debugger;
         if (index === i) {
-          debugger;
           item.checked = !item.checked;
         }
 
@@ -67,29 +66,6 @@ class TheOtherGrid extends React.Component {
           data: newData
         };
       });
-
-      // this.setState(state => {
-      //   return {
-      //     ...state,
-      //     data:{
-      //       ...data,
-      //       data.map((item, index) => {
-      //         if (index === i) {
-      //           debugger;
-      //           return {
-      //             ...item,
-      //             checked: !item.checked
-      //           };
-      //         }
-
-      //         return item;
-      //       });
-      //     }
-
-      //   }
-
-      // });
-      debugger;
     };
 
     return (
